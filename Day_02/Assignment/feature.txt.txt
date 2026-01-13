@@ -1,0 +1,9 @@
+Git Life Cycle:
+
+Working Directory
+        |
+   Staging Area
+        |
+ Local Repository
+        |
+ Remote Directory
