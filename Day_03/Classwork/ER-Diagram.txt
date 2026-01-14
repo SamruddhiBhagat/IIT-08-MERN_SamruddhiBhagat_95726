@@ -1,0 +1,35 @@
+SunBeam Online Student Portal
+
+->Tables:1.Users
+         2.Student
+         3.Courses
+         4.Videos
+-----------------------------------------------------------
+Table 1.Users Fields ->email_id - varchar
+                     ->password - varchar
+                     ->role - enum
+
+
+Table 2.Student Fields ->reg_no (primary key) - int
+                       ->name - varchar
+                       ->email - varchar
+                       ->course_id - int
+                       ->mobile_no - int
+                       ->profile_pic - blob
+
+
+Table 3.Courses Fields ->courses_id - int
+                       ->course_name - varchar
+                       ->description - varchar
+                       ->fees - int 
+                       ->video_expire_duration - int
+                       ->start_date - date
+                       ->end_date - date
+               
+
+Table 4.Videos Fields ->video_id - int 
+                      ->course_id - int(foreign key)
+                      ->title - varchar
+                      ->url - varchar
+                      ->description - varchar
+                      ->added_at - date
