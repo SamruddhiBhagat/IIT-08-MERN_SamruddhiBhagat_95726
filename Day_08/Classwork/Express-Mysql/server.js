@@ -1,10 +1,13 @@
 //1. import express
-const expree = require('express');
+const express = require('express');
+const studentRouter = require('./routes/students')
 
 //2. create app
 const app = express();
 
-
+// 4.Middleware
+app.use(express.json())
+app.use("/students",studentRouter)
 
 
 //3. run the app
